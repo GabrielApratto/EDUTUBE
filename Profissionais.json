@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Gabriel Fernandes",
+    "email": "gabrielapratto6@gmail.com",
+    "expertise": "tech",
+    "password": "29031207"
+  },
+  {
+    "name": "Vini Junior",
+    "email": "vinijr@gmail.com",
+    "expertise": "tech",
+    "password": "29031207"
+  },
+  {
+    "name": "Graziele Melo",
+    "email": "grazy@gmail.com",
+    "expertise": "tech",
+    "password": "12345678"
+  },
+  {
+    "name": "Marley Fernandes",
+    "email": "marley@gmail.com",
+    "expertise": "tech",
+    "password": "euamopao"
+  },
+  {
+    "name": "Zezinho Fernandes",
+    "email": "zezinho@hotmail.com",
+    "expertise": "design",
+    "password": "euamomaçã"
+  },
+  {
+    "name": "Nala Fernandes",
+    "email": "nalapreta@gmail.com",
+    "expertise": "tech",
+    "password": "04102006"
+  },
+  {
+    "name": "Teste",
+    "email": "teste@teste.com",
+    "expertise": "tech",
+    "password": "123456"
+  },
+  {
+    "name": "luna ferreira",
+    "email": "lunalinda@gmail.com",
+    "expertise": "tech",
+    "password": "euamocarinho"
+  },
+  {
+    "name": "Ashley Ieno",
+    "email": "ashley@gmail.com",
+    "expertise": "tech",
+    "password": "15062007"
+  },
+  {
+    "name": "Isaac Fernandes",
+    "email": "isaac@gmail.com",
+    "expertise": "tech",
+    "password": "macacao"
+  },
+  {
+    "name": "Yasmin Pacheco",
+    "email": "yasmin@gmail.com",
+    "expertise": "tech",
+    "password": "isaacfernandes"
+  },
+  {
+    "name": "Ralph Silva",
+    "email": "ralph@gmail.com",
+    "expertise": "tech",
+    "password": "euamolatir"
+  },
+  {
+    "name": "Thompsom Fernandes",
+    "email": "tom@gmail.com.br",
+    "expertise": "tech",
+    "password": "pokemon"
+  },
+  {
+    "name": "Gabriel Apratto",
+    "email": "gabriel.apratto@unimedvr.com.br",
+    "expertise": "big-data-analyst",
+    "password": "29031207"
+  },
+  {
+    "name": "Francinery vaca",
+    "email": "francinery@gmail.com",
+    "expertise": "insurance",
+    "password": "12345678"
+  },
+  {
+    "name": "Grazy melo",
+    "email": "grazymelo@gmail.com",
+    "expertise": "customer-success",
+    "password": "04102006"
+  }
+]

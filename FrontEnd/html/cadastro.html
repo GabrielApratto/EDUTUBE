@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/log-Cad.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
     <div class="auth-container">
@@ -40,13 +42,51 @@
                     <label for="expertise">Área de Atuação</label>
                     <div class="input-wrapper">
                         <i class="fa-solid fa-briefcase"></i>
-                        <select id="expertise">
-                            <option value="tech">Tecnologia & Software</option>
-                            <option value="design">Design & Produto</option>
-                            <option value="marketing">Marketing & Vendas</option>
-                            <option value="business">Negócios & Gestão</option>
-                        </select>
+                        <input type="text" id="expertise" list="expertise-options"
+                            placeholder="Digite sua profissão ou área" required>
                     </div>
+                    <datalist id="expertise-options">
+                        <option value="Saúde Mental"></option>
+                        <option value="Saúde Física e Reabilitação"></option>
+                        <option value="Atendimento Ambulatorial"></option>
+                        <option value="Acupuntura"></option>
+                        <option value="Enfermagem Hospitalar"></option>
+                        <option value="Medicina Intensiva (UTI)"></option>
+                        <option value="Nutrição Clínica e Esportiva"></option>
+                        <option value="Fisioterapia Traumato-Ortopédica"></option>
+                        <option value="Psicologia Clínica"></option>
+                        <option value="Odontologia Geral"></option>
+                        <option value="Farmácia Hospitalar e Clínica"></option>
+                        <option value="Fonoaudiologia"></option>
+                        <option value="Terapia Ocupacional"></option>
+                        <option value="Saúde Coletiva e Pública"></option>
+                        <option value="Animação 3D e Efeitos Visuais"></option>
+                        <option value="Desenvolvimento de Software (Full Stack)"></option>
+                        <option value="Ciência de Dados e Inteligência Artificial"></option>
+                        <option value="Segurança da Informação e Cybersec"></option>
+                        <option value="Design de Experiência do Usuário (UX/UI)"></option>
+                        <option value="Infraestrutura e Redes de Computadores"></option>
+                        <option value="Desenvolvimento de Jogos Digitais"></option>
+                        <option value="Atuária"></option>
+                        <option value="Administração e Gestão Estratégica"></option>
+                        <option value="Finanças Corporativas e Controladoria"></option>
+                        <option value="Marketing Digital e Growth Hacking"></option>
+                        <option value="Recursos Humanos e Gestão de Pessoas"></option>
+                        <option value="Direito Civil e Contratual"></option>
+                        <option value="Direito Corporativo e Tributário"></option>
+                        <option value="Logística e Cadeia de Suprimentos"></option>
+                        <option value="Engenharia Civil e Construção"></option>
+                        <option value="Engenharia de Software"></option>
+                        <option value="Engenharia Elétrica e Automação"></option>
+                        <option value="Engenharia Mecânica e Automotiva"></option>
+                        <option value="Engenharia Ambiental e Sustentabilidade"></option>
+                        <option value="Arquitetura e Urbanismo"></option>
+                        <option value="Docência e Pedagogia"></option>
+                        <option value="Gestão Escolar e Coordenação"></option>
+                        <option value="Tradução e Interpretação"></option>
+                        <option value="Jornalismo e Assessoria de Imprensa"></option>
+                        <option value="Serviço Social e Projetos Comunitários"></option>
+                    </datalist>
                 </div>
 
                 <div class="input-group">
@@ -63,6 +103,7 @@
             <p class="footer-text">Já possui conta? <a href="login.html">Fazer login</a></p>
         </div>
     </div>
-
+    <script src="../javascript/Cadastro.js"></script>
 </body>
+
 </html>

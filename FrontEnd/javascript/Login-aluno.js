@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const senhaDigitada = document.getElementById('password').value;
 
         try {
-            const resposta = await fetch('http://localhost:3000/login', {
+            const resposta = await fetch('http://localhost:3000/login-aluno', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (resposta.ok) {
                 alert(resultado.mensagem);
-                window.location.href = 'Home.html';
+                window.location.href = 'home-aluno.html';
             } else {
                 alert(resultado.mensagem || 'Email ou senha incorretos.');
             }

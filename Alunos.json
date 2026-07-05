@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Gabriel Fernandes",
+    "email": "gabrielapratto6@gmail.com",
+    "expertise": "tech",
+    "password": "29031207"
+  },
+  {
+    "name": "Aluno Teste",
+    "email": "aluno@teste.com",
+    "expertise": "",
+    "password": "12345678"
+  },
+  {
+    "name": "Samuel Tavares",
+    "email": "samuel@senac.edu.br",
+    "expertise": "",
+    "password": "12345678"
+  }
+]
