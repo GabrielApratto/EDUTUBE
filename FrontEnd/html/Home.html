@@ -20,7 +20,7 @@
         
         <div class="nav-center">
             <form class="search-form">
-                <input type="text" placeholder="Buscar minicursos, áreas ou profissionais...">
+                <input type="text" placeholder="Buscar ">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
@@ -28,8 +28,11 @@
         <div class="nav-right">
             <button class="btn-upload"><i class="fa-solid fa-plus"></i> Publicar Curso</button>
             <i class="fa-regular fa-bell icon-btn"></i>
-            <div class="user-avatar">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=60" alt="Foto de Perfil">
+            <div class="user-profile">
+                <span class="user-name" data-user-name>Usuário</span>
+                <div class="user-avatar">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=60" alt="Foto de Perfil" data-user-avatar>
+                </div>
             </div>
         </div>
     </header>
@@ -38,29 +41,21 @@
         
         <aside class="sidebar">
             <nav class="sidebar-menu">
-                <a href="#" class="menu-item active"><i class="fa-solid fa-house"></i> Início</a>
-                <a href="#" class="menu-item"><i class="fa-solid fa-compass"></i> Explorar Áreas</a>
-                <a href="#" class="menu-item"><i class="fa-solid fa-book-bookmark"></i> Meus Cursos</a>
-                <a href="#" class="menu-item"><i class="fa-solid fa-certificate"></i> Certificados</a>
+                <a href="Home.html" class="menu-item active"><i class="fa-solid fa-house"></i> Início</a>
+                <a href="explorar.html" class="menu-item"><i class="fa-solid fa-compass"></i> Explorar Áreas</a>
+                <a href="#" class="menu-item"><i class="fa-solid fa-book-bookmark"></i> Concursos</a>
+                
                 <hr>
-                <span class="sidebar-title">Sua Redes</span>
-                <a href="#" class="menu-item"><i class="fa-solid fa-user-tie"></i> Perfil Profissional</a>
+                
+                <a href="perfil.html" class="menu-item"><i class="fa-solid fa-user-tie"></i> Perfil Profissional</a>
                 <a href="#" class="menu-item"><i class="fa-solid fa-chart-line"></i> Dashboard Instrutor</a>
                 <hr>
-                <a href="#" class="menu-item"><i class="fa-solid fa-gear"></i> Configurações</a>
+                
             </nav>
         </aside>
 
         <main class="content">
-            <div class="filter-tags">
-                <span class="tag active">Tudo</span>
-                <span class="tag">Programação</span>
-                <span class="tag">Marketing Digital</span>
-                <span class="tag">Design UX/UI</span>
-                <span class="tag">Finanças</span>
-                <span class="tag">Gestão de Projetos</span>
-                <span class="tag">Inteligência Artificial</span>
-            </div>
+            
 
             <div class="courses-grid">
                 
@@ -75,7 +70,7 @@
                             <h3 class="course-title">Minicurso de UX Design: Do Briefing ao Protótipo</h3>
                             <p class="instructor-name">Ana Silva <i class="fa-solid fa-circle-check verified"></i></p>
                             <p class="course-metrics">15 mil visualizações • há 2 dias</p>
-                            <span class="badge-level">Intermediário</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -91,7 +86,7 @@
                             <h3 class="course-title">Python para Análise de Dados e Finanças</h3>
                             <p class="instructor-name">Carlos Melo</p>
                             <p class="course-metrics">8.4 mil visualizações • há 1 semana</p>
-                            <span class="badge-level">Iniciante</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -107,7 +102,7 @@
                             <h3 class="course-title">Estratégias de Tráfego Pago para Negócios Locais</h3>
                             <p class="instructor-name">Mariana Costa <i class="fa-solid fa-circle-check verified"></i></p>
                             <p class="course-metrics">23 mil visualizações • há 3 semanas</p>
-                            <span class="badge-level">Avançado</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -123,7 +118,7 @@
                             <h3 class="course-title">Arquitetura de Software Prática com Microserviços</h3>
                             <p class="instructor-name">Jorge Reis</p>
                             <p class="course-metrics">4.1 mil visualizações • há 1 mês</p>
-                            <span class="badge-level">Avançado</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -132,5 +127,6 @@
         </main>
     </div>
 
+    <script src="../javascript/usuario.js"></script>
 </body>
 </html>

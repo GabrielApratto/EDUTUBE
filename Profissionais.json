@@ -94,5 +94,17 @@
     "email": "grazymelo@gmail.com",
     "expertise": "customer-success",
     "password": "04102006"
+  },
+  {
+    "name": "Jorge amado",
+    "email": "jorge@gmail.com.br",
+    "expertise": "Serviço Social e Projetos Comunitários",
+    "password": "12345678"
+  },
+  {
+    "name": "Soraia Ferreira",
+    "email": "instrutorasoraia@gmail.com",
+    "expertise": "Administração e Gestão Estratégica",
+    "password": "23071991"
   }
 ]

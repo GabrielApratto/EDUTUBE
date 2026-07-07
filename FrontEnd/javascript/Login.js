@@ -26,6 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const resultado = await resposta.json();
 
             if (resposta.ok) {
+                const usuarioLogado = resultado.profissional || {};
+                localStorage.setItem('usuarioAtual', JSON.stringify({
+                    name: usuarioLogado.name || usuarioLogado.email || 'Usuário',
+                    email: usuarioLogado.email || '',
+                    expertise: usuarioLogado.expertise || '',
+                    avatar: usuarioLogado.avatar || ''
+                }));
+
                 alert(resultado.mensagem);
                 window.location.href = 'Home.html';
             } else {

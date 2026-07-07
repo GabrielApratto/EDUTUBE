@@ -161,6 +161,26 @@ html {
     color: var(--texto-principal);
 }
 
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--borda-suave);
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--texto-principal);
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .user-avatar img {
     width: 38px;
     height: 38px;

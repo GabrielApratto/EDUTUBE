@@ -16,5 +16,29 @@
     "email": "samuel@senac.edu.br",
     "expertise": "",
     "password": "12345678"
+  },
+  {
+    "name": "Samuel Cabaço",
+    "email": "samuelcabaco@gmail.com",
+    "expertise": "",
+    "password": "12345678"
+  },
+  {
+    "name": "Patrick Aprígio",
+    "email": "patrick.aprigio2004@gmail.com",
+    "expertise": "",
+    "password": "Abc1234."
+  },
+  {
+    "name": "Carolina dos Santos Gonçalves",
+    "email": "carolina.sgoncalves@aluno.senac.rio",
+    "expertise": "",
+    "password": "150719_Ba"
+  },
+  {
+    "name": "Samuel Lima Fernandes",
+    "email": "Franciscosamuelsarah2018@gmail.com",
+    "expertise": "",
+    "password": "satanistasafada123"
   }
 ]
