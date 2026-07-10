@@ -99,6 +99,7 @@ app.post('/login', (req, res) => {
             profissional: {
                 name: usuarioEncontrado.name,
                 email: usuarioEncontrado.email,
+                expertise: usuarioEncontrado.expertise || '',
             },
         });
     }
@@ -124,11 +125,54 @@ app.post('/login-aluno', (req, res) => {
             profissional: {
                 name: usuarioEncontrado.name,
                 email: usuarioEncontrado.email,
+                expertise: usuarioEncontrado.expertise || '',
             },
         });
     }
 
     return res.status(401).json({ mensagem: 'Email ou senha incorretos.' });
+});
+
+app.put('/profissional', (req, res) => {
+    const { currentEmail, email, expertise, name } = req.body;
+
+    if (!currentEmail) {
+        return res.status(400).json({ mensagem: 'Email atual é obrigatório.' });
+    }
+
+    const profissionais = carregarProfissionais();
+    const usuarioAtual = profissionais.find((profissional) => profissional.email === currentEmail);
+
+    if (!usuarioAtual) {
+        return res.status(404).json({ mensagem: 'Profissional não encontrado.' });
+    }
+
+    if (email && email !== currentEmail) {
+        const existeEmail = profissionais.some((profissional) => profissional.email === email);
+        if (existeEmail) {
+            return res.status(400).json({ mensagem: 'Já existe um profissional com esse e-mail.' });
+        }
+        usuarioAtual.email = email;
+    }
+
+    if (expertise !== undefined) {
+        usuarioAtual.expertise = expertise;
+    }
+
+    if (name !== undefined) {
+        usuarioAtual.name = name;
+    }
+
+    salvarDados(ARQUIVO_PROFISSIONAIS, profissionais);
+
+    return res.status(200).json({
+        mensagem: 'Perfil atualizado com sucesso.',
+        profissional: {
+            name: usuarioAtual.name,
+            email: usuarioAtual.email,
+            expertise: usuarioAtual.expertise || '',
+        },
+    });
 });
 
 app.listen(3000, () => {
